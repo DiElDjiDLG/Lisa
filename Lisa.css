@@ -204,11 +204,3 @@ button:hover {
         opacity: 0;
     }
 }
-
-#quiz-container::before {
-    transition: opacity 0.5s;
-}
-
-#quiz-container {
-    transition: background-image 0.5s ease-in-out;
-}

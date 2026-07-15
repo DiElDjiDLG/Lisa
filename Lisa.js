@@ -19,32 +19,31 @@ const questions = [
         text: "Druk op de knop om verder te gaan",
         type: "normal",
         btnText: "Start",
-        img: "Images/date1.jpeg"
+        img: "Images/date1.webp"
     },
-
     {
         text: "Geef een cijfer aan deze date:",
         type: "btnMadness",
         btnText: "Next",
-        img: "Images/date2.jpeg"
+        img: "Images/date2.webp"
     },
     {
         text: "Kies je favoriet:",
         type: "multipleChoice",
         btnText: "Next",
-        img: "Images/date3.jpeg"
+        img: "Images/date3.webp"
     },
     {
         text: "Deze is heel simpel, druk op de 'Next' knop!",
         type: "trippyBtn",
         btnText: "Next",
-        img: "Images/date4.jpeg"
+        img: "Images/date4.webp"
     },
     {
         text: "Oke nu even serieus haha, heb je het naar je zin gehad?",
         type: "trueOrFalse",
         btnText: "Next",
-        img: "Images/date5.jpeg"
+        img: "Images/date5.webp"
     }
 
 ];
@@ -221,7 +220,7 @@ const addTrueFalseBtns = () => {
 
 const showKittyAnimation = (kittyNumber, callback) => {
 
-    kittyImg.src = `Images/kitty${kittyNumber}.jpeg`;
+    kittyImg.src = `Images/kitty${kittyNumber}.webp`;
 
     kittyOverlay.style.display = "flex";
 
