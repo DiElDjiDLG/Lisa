@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);
+}
+
+.navbar {
+    background: rgba(0,0,0,0.45);
+    backdrop-filter: blur(8px);
+    border-radius: 12px;
+    padding: 15px;
+}
+
+.navbar-brand {
+    text-align: center;
+    white-space: normal;
+    font-size: 1.2rem;
+}
+
+
+main {
+    display: grid;
+    place-items: center;
+    padding: 20px;
+}
+
+
+#quiz-container {
+
+    width: min(700px,100%);
+    min-height:500px;
+
+    background:white;
+    border-radius:25px;
+    padding:40px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,0.2);
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+}
+
+#text {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-weight: bold;
+
+    padding: 15px 20px;
+    border-radius: 15px;
+
+    display: inline-block;
+    max-width: 90%;
+}
+
+#quiz-content {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+
+#rating-btns {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+/* normale cijfer knoppen */
+
+.numberBtns {
+
+    width:40px !important;
+    height:40px !important;
+
+    padding:0 !important;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+}
+
+/* rozen */
+.rose-grid {
+    display:grid;
+    grid-template-columns:repeat(2,150px);
+    gap:20px;
+}
+
+.roseBtn {
+    width:150px !important;
+    height:150px !important;
+    padding:0 !important;
+    border-radius:20px !important;
+    border:none;
+    background-size:cover;
+    background-position:center;
+}
+
+.roseBtn:hover {
+    transform:scale(1.05);
+}
+
+#title {
+    color:#d63384;
+    margin-bottom:20px;
+    font-size:3rem;
+}
+
+.intro {
+    font-size:1.2rem;
+    line-height:1.7;
+    color:#555;
+    margin-bottom:35px;
+}
+
+button {
+    border-radius:999px !important;
+    transition:0.3s;
+}
+
+button:hover {
+    transform:scale(1.05);
+}
+
+.rose-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 120px);
+    grid-template-rows: repeat(2, 120px);
+    gap: 15px;
+    justify-content: center;
+}
+
+.roseBtn {
+    width: 120px !important;
+    height: 120px !important;
+}
+
+#kitty-overlay {
+    position: fixed;
+    inset: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.3);
+    z-index: 9999;
+}
+
+#kitty-img {
+    width: 250px;
+    max-width: 80vw;
+    animation: kittyPop 2s ease forwards;
+}
+
+@keyframes kittyPop {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    25% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+
+    75% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+.heart {
+    position: absolute;
+    font-size: 2rem;
+    animation: floatHeart 2s linear forwards;
+    pointer-events: none;
+}
+
+@keyframes floatHeart {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+}
