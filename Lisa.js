@@ -26,7 +26,7 @@ const questions = [
         text: "Geef een cijfer aan deze date:",
         type: "btnMadness",
         btnText: "Next",
-        img: "Images/date3.jpeg"
+        img: "Images/date2.jpeg"
     },
     {
         text: "Kies je favoriet:",
