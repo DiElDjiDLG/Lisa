@@ -6,49 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lisa ❤️</title>
 
+    <meta property="og:title" content="Lisa ❤️">
+    <meta property="og:description" content="Een speciale quiz ❤️">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://dieldjidlgl.github.io/Lisa/Images/date6.webp">
+    <meta property="og:url" content="https://dieldjidlgl.github.io/Lisa/">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="Lisa.css">
 </head>
 
 <body>
 
-<header id="header">
-    <nav class="navbar navbar-dark">
-        <div class="container justify-content-center">
-            <span id="navbar" class="navbar-brand fs-4">
-                ❤️ Hallo Lisa (YOO)! Hier kunt u een review achterlaten van onze klimdate! ❤️
-            </span>
+    <header id="header">
+        <nav class="navbar navbar-dark">
+            <div class="container justify-content-center">
+                <span id="navbar" class="navbar-brand fs-4">
+                    ❤️ Hallo Lisa (YOO)! Hier kunt u een review achterlaten van onze klimdate! ❤️
+                </span>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <div id="quiz-container">
+
+            <h1 id="title"></h1>
+
+            <p id="text" class="intro"></p>
+
+            <div id="quiz-content">
+
+                <div id="rating-btns"></div>
+
+                <button id="quiz-btn" class="btn btn-lg btn-danger"></button>
+
+            </div>
+
         </div>
-    </nav>
-</header>
 
+    </main>
 
-<main>
-
-    <div id="quiz-container">
-
-        <h1 id="title"></h1>
-
-        <p id="text" class="intro"></p>
-
-        <div id="quiz-content">
-
-            <div id="rating-btns"></div>
-
-            <button id="quiz-btn" class="btn btn-lg btn-danger"></button>
-
-        </div>
-
+    <div id="kitty-overlay">
+        <img id="kitty-img" src="">
+        <div id="hearts"></div>
     </div>
 
-</main>
-
-<div id="kitty-overlay">
-    <img id="kitty-img" src="">
-    <div id="hearts"></div>
-</div>
-
-<script type="module" src="firebase.js"></script>
-<script type="module" src="Lisa.js"></script>
+    <script type="module" src="firebase.js"></script>
+    <script type="module" src="Lisa.js"></script>
 </body>
+
 </html>
