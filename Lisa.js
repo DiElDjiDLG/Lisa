@@ -271,7 +271,7 @@ const loadQuiz = () => {
 
     if (questionIndex >= questions.length) {
 
-        quizContainer.style.backgroundImage = "url('Images/date6.jpeg')";
+        quizContainer.style.backgroundImage = "url('Images/date6.webp')";
         quizContainer.style.backgroundSize = "cover";
         quizContainer.style.backgroundPosition = "center";
 
