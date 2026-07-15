@@ -49,6 +49,21 @@ const questions = [
 
 ];
 
+const preloadImages = () => {
+
+    questions.forEach(question => {
+
+        if(question.img){
+
+            const img = new Image();
+            img.src = question.img;
+
+        }
+
+    });
+
+};
+
 const rmNavbar = () => {
 
     if (questionIndex !== 0) {
@@ -356,6 +371,6 @@ btn.addEventListener("click", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-
+    preloadImages();
     loadQuiz();
 });

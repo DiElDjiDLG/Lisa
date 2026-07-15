@@ -13,7 +13,7 @@ body {
 }
 
 .navbar {
-    background: rgba(0,0,0,0.45);
+    background: rgba(0, 0, 0, 0.45);
     backdrop-filter: blur(8px);
     border-radius: 12px;
     padding: 15px;
@@ -35,20 +35,20 @@ main {
 
 #quiz-container {
 
-    width: min(700px,100%);
-    min-height:500px;
+    width: min(700px, 100%);
+    min-height: 500px;
 
-    background:white;
-    border-radius:25px;
-    padding:40px;
+    background: white;
+    border-radius: 25px;
+    padding: 40px;
 
-    box-shadow:0 15px 40px rgba(0,0,0,0.2);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
 
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
 }
 
@@ -65,74 +65,74 @@ main {
 }
 
 #quiz-content {
-    display:flex;
-    flex-direction:column;
-    align-items:center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
 #rating-btns {
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 /* normale cijfer knoppen */
 
 .numberBtns {
 
-    width:40px !important;
-    height:40px !important;
+    width: 40px !important;
+    height: 40px !important;
 
-    padding:0 !important;
+    padding: 0 !important;
 
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
 /* rozen */
 .rose-grid {
-    display:grid;
-    grid-template-columns:repeat(2,150px);
-    gap:20px;
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    gap: 20px;
 }
 
 .roseBtn {
-    width:150px !important;
-    height:150px !important;
-    padding:0 !important;
-    border-radius:20px !important;
-    border:none;
-    background-size:cover;
-    background-position:center;
+    width: 150px !important;
+    height: 150px !important;
+    padding: 0 !important;
+    border-radius: 20px !important;
+    border: none;
+    background-size: cover;
+    background-position: center;
 }
 
 .roseBtn:hover {
-    transform:scale(1.05);
+    transform: scale(1.05);
 }
 
 #title {
-    color:#d63384;
-    margin-bottom:20px;
-    font-size:3rem;
+    color: #d63384;
+    margin-bottom: 20px;
+    font-size: 3rem;
 }
 
 .intro {
-    font-size:1.2rem;
-    line-height:1.7;
-    color:#555;
-    margin-bottom:35px;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 35px;
 }
 
 button {
-    border-radius:999px !important;
-    transition:0.3s;
+    border-radius: 999px !important;
+    transition: 0.3s;
 }
 
 button:hover {
-    transform:scale(1.05);
+    transform: scale(1.05);
 }
 
 .rose-grid {
@@ -154,7 +154,7 @@ button:hover {
     display: none;
     justify-content: center;
     align-items: center;
-    background: rgba(0,0,0,0.3);
+    background: rgba(0, 0, 0, 0.3);
     z-index: 9999;
 }
 
@@ -203,4 +203,12 @@ button:hover {
         transform: translateY(-200px);
         opacity: 0;
     }
+}
+
+#quiz-container::before {
+    transition: opacity 0.5s;
+}
+
+#quiz-container {
+    transition: background-image 0.5s ease-in-out;
 }
